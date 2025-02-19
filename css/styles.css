@@ -1,80 +1,31 @@
 * {
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24px;
-    padding: 0;
-    margin: 0;
+    font-size: 18px;
 }
 
 body {
-    background-color: black;
-    display: flex;
+    background-color: white;
+    width: 40vw;
+    margin: 0 auto;
 }
 
-ul {
-    background-color: rgb(235, 235, 235);
-    list-style-type: square;
-    text-align: center;
-    padding: 20px 40%;
+h1, h2, h3, h4, h5, h6
+{
+    line-height: 1.5;
 }
 
-.title {
-    background-color: rgb(26, 26, 26);
-    color: white;
-    text-align: center;
+h1
+{
+    font-size: 32px;
 }
 
-.title h1 {
-    font-size: 64px;
-    padding: 10px 0;
+h2
+{
+    font-size: 26px;
 }
 
-.title p {
-    padding: 10px 0;
-}
-
-.status {
-    background-color: lightslategrey;
-    color: white;
-    text-align: center;
-
-}
-
-.span {
-    align-items: center;
-    background-color: lightgrey;
-    display: flex;
-    justify-content: space-around;
-    height: 240px;
-}
-
-.heading-separator {
-    background-color: lightgrey;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.block {
-    background-color: rgb(235, 235, 235);
-    text-align: center;
-    padding: 20px 0;
-}
-
-.bg_text {
-    position: fixed;
-    color: #202020;
-}
-
-.primary_div {
-    background-color: black;
-    display: inline-block;
-    flex: 1;
-}
-
-.canvas_frame {
-    background-color: rgb(26, 26, 26);
-    display: flex;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
+h3
+{
+    font-size: 20px;
 }
