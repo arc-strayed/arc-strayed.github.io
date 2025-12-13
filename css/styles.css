@@ -76,10 +76,16 @@ nav {
     border-left: 2px solid lightgray;
     border-right: 2px solid lightgray;
     box-shadow: 0 0 10px gray;
-    width: 50vw;
+    width: 1000px;
     min-height: 100vh;
     margin: 0 auto;
     padding: 20px;
+}
+
+@media (max-width: 1000px) {
+    .mainPage {
+        width: 100vw;
+    }
 }
 
 .projectImage {
