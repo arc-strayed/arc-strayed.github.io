@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" content="initial-scale=1.0">
+        <title>Lilith Huynh GitHub Page</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="mainPage">
+            <a href="/index.html"><h1>Lilith Huynh</h1></a>
+            <p class="titleSubtitle">Games Programmer</p>
+            <nav>
+                <ul>
+                    <li><a href="/projects.html">Projects</a></li>
+                </ul>
+            </nav>
+
+            <h2>Tails of Light</h2>
+            <hr>
+            <div class="flexBox">
+                <a class="tagBox" style="margin: 10px 2px; color: white; background-color: #fa5c5c; border-color: hsl(0 62 57);" referrerpolicy="no-referrer" href="https://break-check-studios.itch.io/tails-of-light">
+                    <img src="/res/itch/logos/itchio-logo-textless-white.png" width="24px" height="24px">
+                    <p>itch.io</p>
+                </a>
+
+                <div class="tagBox" style="margin: 10px 2px; color: white; background-color: #aaaaaa; border-color: hsl(0, 0%, 61%);">
+                    <p>Unreal Engine 5</p>
+                </div>
+            </div>
+
+            <h3>About</h3>
+            <p>
+                Tails of Light was our second year AIE student major project. The game is an atmospheric 3D puzzle platformer. It was developed in Unreal Engine 5 with a combination of Blueprints and C++.
+                I was the lead programmer and worked on most of the mechanics.
+            </p>
+
+            <h3>Tail Mechanic</h3>
+            <p>
+                The tail mechanic was developed early on and is one of the primary ways the player interacts with objects. It works by&colon;
+            </p>
+            <ol>
+                <li>Checking if the tail loops itself.</li>
+                <li>Checking for objects near the tail.</li>
+                <li>Checking if the lines from the object all hit.</li>
+                <li>Activating the object's interact interface.</li>
+            </ol>
+            <img src="wind_order.png" style="display: block; margin: 32px 0;" class="imgBorder">
+            <p>
+                The prototype worked by casting a line from the object that is being checked with a line between two points in the array.
+                The wind order is added to based on whether the line is heading in the positive or negative directions along the y-axis.
+            </p>
+            <img src="wind_order_2.png" style="display: block; margin: 32px 0;" class="imgBorder">
+            <p>
+                The implementation it was changed to instead check for 4 directions. This worked more reliably at the cost of having to do more line checks per object.
+            </p>
+            <br>
+
+            <p>
+                It has a AABB check for objects and additional checks for performance. The main issue with these is that it checks for the object's origin.
+                If a static mesh's origin isn't roughly near the player's height, the player has to jump up in order to get it within the vertical range of the bounding box.
+            </p>
+            <br>
+
+            <p>
+                One of the implementation's considerations is that it really only works horizontally. Having to support another axis of rotation would make it much more complex.
+                My thought is that vertical puzzles would be much harder to design for, especially when the tail has to loop on itself.
+            </p>
+
+        </div>
+    </body>
+</html>
