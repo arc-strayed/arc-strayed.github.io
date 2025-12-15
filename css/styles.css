@@ -105,6 +105,11 @@ nav {
     padding: 0;
 }
 
+.flexItem {
+    flex: 1;
+    padding-right: 16px;
+}
+
 .tagBox {
     border: 2px solid lightgray;
     border-radius: 2px;
