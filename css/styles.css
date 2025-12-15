@@ -110,6 +110,19 @@ nav {
     padding-right: 16px;
 }
 
+.flexItem h2 {
+    margin-top: 48px;
+}
+
+.flexItem h3 {
+    margin-top: 16px;
+}
+
+.flexItem ul {
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
 .tagBox {
     border: 2px solid lightgray;
     border-radius: 2px;
