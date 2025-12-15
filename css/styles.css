@@ -57,12 +57,16 @@ nav ul {
     padding: 0;
 }
 
+nav ul a {
+    text-decoration: none;
+}
+
 hr {
     margin-top: 0;
 }
 
 nav {
-    margin-top: 8px;
+    margin-top: 32px;
 }
 
 .titleSubtitle {
@@ -147,4 +151,10 @@ nav {
 
 .tagBox img {
     margin-right: 8px;
+}
+
+.navItem {
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    padding: 8px;
 }
