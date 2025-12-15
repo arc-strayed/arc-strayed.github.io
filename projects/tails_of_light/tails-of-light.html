@@ -53,14 +53,10 @@
             <p>
                 The implementation it was changed to instead check for 4 directions. This worked more reliably at the cost of having to do more line checks per object.
             </p>
-            <br>
-
             <p>
                 It has a AABB check for objects and additional checks for performance. The main issue with these is that it checks for the object's origin.
                 If a static mesh's origin isn't roughly near the player's height, the player has to jump up in order to get it within the vertical range of the bounding box.
             </p>
-            <br>
-
             <p>
                 One of the implementation's considerations is that it really only works horizontally. Having to support another axis of rotation would make it much more complex.
                 My thought is that vertical puzzles would be much harder to design for, especially when the tail has to loop on itself.
